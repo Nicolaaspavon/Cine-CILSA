@@ -1,0 +1,587 @@
+/* General */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(51, 47, 47);
+    color: white;
+  }
+.fondo {
+    background-color: rgb(51, 47, 47);
+  }
+  header {
+    background-color: #262626;
+  }
+  .encabezadoA {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    color: aliceblue;
+    margin: 0px;
+  }
+  
+  
+  /* CF */
+  
+  .contenedor {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*boton de volver a inicio*/
+  header nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /*zoom al poner el cursor sobre imagen*/
+  .zoom:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+  
+  .zoom {
+    transition: transform 0.5s;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  /*forma la grilla de paliculas*/
+  .peliculas {
+    width: 65%;
+    padding: 20px 20px;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 5%;
+  }
+  /*fondos de peliculas*/
+  /*Peli Invasion */
+  .fondo1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/Invasion.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli Han solo */
+  .fondo2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/han-solo-fondo.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli guerra del mañana */
+  .fondo3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondolaguerra.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli moonfall */
+  .fondo4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/moonfall-fondo.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli samaritan */
+  .fondo5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondo-Samaritan.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli tenet */
+  .fondo6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondotenet.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli amenaza fantasma */
+  .fondo7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondoamenaza.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli ataque de los clones */
+  .fondo8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondoataque.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli El ascenso de Skywalker */
+  .fondo9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondoascenso.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli El despertar de la fuerza */
+  .fondo10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/despertar.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli Caos: el inicio */
+  .fondo11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/caosfondo.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli : el imperio contraataca */
+  .fondo12 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondoimperio.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli : los ultimos jedi */
+  .fondo13 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/ultimosjedifondo.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli : el regreso jedi */
+  .fondo14 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondoregreso.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*Peli : venganza de los sith*/
+  .fondo15 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../img/fondovenganza.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  /*descripciones y titulos de peliculas*/
+  .contenido,
+  .datos {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+    padding-right: 10px;
+  }
+  
+  .titulo img {
+    width: 300px;
+    height: 300px;
+    padding-right: 10px;
+  }
+  
+  .contenido,
+  .descripcion {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  
+  .datos {
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: start;
+  }
+  
+  /* Cards Contactos */
+  .img-card {
+    object-fit: cover;
+    width: 85%;
+    height: 400px;
+  }
+  
+  .contenedor-carrousell {
+    height: 870px;
+    margin: 10px;
+  }
+  /* Animadas */
+  .subtitulos {
+    text-align: center;
+  }
+  
+  .contenedor-peli-a {
+    margin-top: 75px;
+    margin-bottom: 250px;
+    margin-left: 10px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .imagenes {
+    width: 245px;
+    height: 350px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+  }
+  
+  a:visited {
+    color: aliceblue;
+  }
+  
+  /*Footer*/
+  
+  .img-footer {
+    width: 60px;
+    height: 65px;
+  }
+  
+  .img-redes {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+  }
+  
+  .content-footer {
+    margin-top: 0px;
+    background-color: rgb(51, 47, 47);
+  }
+  
+  .contenedor-texto {
+    width: 60%;
+    margin-left: 300px;
+    margin-top: 100px;
+  }
+  
+  .textos-inicio {
+    font-size: x-large;
+  }
+  .imglogo-footer {
+    width: 93px;
+    height: 70px;
+  }
+  
+  /* Suspenso*/
+  
+  .subtitulos {
+    text-align: center;
+    font-family: "Oleo Script Swash Caps", cursive;
+    text-decoration: underline;
+  }
+  .textos-suspenso {
+    margin: 10px;
+    text-align: justify;
+    width: 70%;
+    display: inline-block;
+  }
+  .img-suspenso {
+    width: 200px;
+    height: 250px;
+    margin-top: 5px;
+    border-radius: 20%;
+    display: inline-block;
+  }
+  
+  /*Clasicos*/
+  
+  .Titulo-Principal {
+    font-size: large;
+    text-align: center;
+    background-color: rgb(19, 22, 26);
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .El-Padrino {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .El-Padrino img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Caracortada {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Caracortada img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Perfume-de-Mujer {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Perfume-de-Mujer img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Casino {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 270px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Casino img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Buenos-Muchachos {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Buenos-Muchachos img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Taxi-Driver {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Taxi-Driver img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Erase-una-vez-en-américa {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Erase-una-vez-en-américa img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Misery {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Misery img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .Sueño-de-fuga {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 290px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .Sueño-de-fuga img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .La-ventana-Indiscreta {
+    background-color: rgb(51, 46, 46);
+    border-top: solid 4px rgb(91, 112, 230);
+    padding: 30px;
+    margin-left: 150px;
+    height: 250px;
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 9px 9px 5px rgb(53, 52, 52);
+  }
+  .La-ventana-Indiscreta img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 7px;
+  }
+  .sinopsis {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  section a {
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(255, 226, 97);
+  }
+  /*
+  h3 {
+    background-color: black;
+    color: aqua;
+    height: 45px;
+    width: 74%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-left: 153px;
+  }*/
+  .datos {
+    font-size: large;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Courier New", Courier, monospace;
+  }
+  .logo-facebook {
+    width: 35px;
+  }
+  .text {
+    color: white;
+  }
+  
+  /*Terror*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .contenedor1 {
+    width: 90%;
+    margin: auto;
+    border-radius: 0.625em;
+  }
+  
+  header .contenedor1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 3em;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: underline #c40000;
+  }
+  .logo_imagen{
+    background-color: rgb(51, 47, 47);
+    float:right;
+  }
+  /* --- --- --- PELICULAS --- --- --- */
+  
+  .pelicula_1 {
+    font-size: 1.125em;
+    color: #ffffff;
+  }
+  .contenedor1 .reseñas{
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 1.75em;
+    max-width: 75%;
+    margin-bottom: 2.5em;
+  }
+  
+  .contenedor1 .reseñas{
+    display: inline-block;
+  }
+  .reseñas {
+    border-left: solid #c40000 0.313em;
+    border-radius: 0em 0.938em;
+  }
+  .titulos {
+    text-decoration: underline #c40000;
+    padding-bottom: 0.938em;
+  }
+  main img {
+    border-style: outset;
+  }
+  
+  header div {
+    border-bottom: #c40000 solid 1em;
+  }
+  
+  .contenedor-texto .textos-inicio ul {
+    margin-bottom: 0px;
+  }

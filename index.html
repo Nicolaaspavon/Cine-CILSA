@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <title>home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">INICIO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample01"
+            aria-controls="navbarsExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./paginas/animadas.html"
+                  >Animadas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./paginas/suspenso.html"
+                  >Suspenso</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paginas/"
+                  >Clasicos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="./paginas/cf.html"
+                  data-bs-toggle="page"
+                  >Ciencia Ficcion</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./paginas/terror.html"
+                  >Terror</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./paginas/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+
+            <form role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="../img/desarrollo/grupal-1.jpg"
+              class="d-block w-100 contenedor-carrousell"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Grupo de trabajo del curso de programacion web</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="../img/desarrollo/grupal-2.jpg"
+              class="contenedor-carrousell d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Grupo de trabajo del curso de programacion web</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/desarrollo/grupal-3.jpg"
+              class="contenedor-carrousell d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Charla de accesibilidad web</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="contenedor-texto">
+        <h2>ESTE PROYECTO</h2>
+        <p class="textos-inicio">
+          Lo que vas a encontrar en este sitio surgio del trabajo colaborativo
+          de los participantes del curso de Introduccion a la programacion web
+          del programa de oportunidades de formacion de CILSA. <br />
+          Quisimos crear un sitio web sobre cine. Las peliculas estan divididas
+          por generos y podes encontrar una breve reseña de cada una. <br />
+          Esta idea nos permitio poner en practica las habilidades de desarrollo
+          web que aprendimos durante el curso (HTML y CSS)
+        </p>
+      </div>
+      <div class="contenedor-texto textos-inicio">
+        <h2>PROGRAMA DE OPORTUNIDADES DE FORMACION</h2>
+        <p>
+          Desde 2010 CILSA desarrolla el Programa Nacional de Becas y
+          Oportunidades con la finalidad de promover la inclusión educativa,
+          social y laboral de personas con discapacidad y en situación de
+          vulnerabilidad social. <br />
+          Para cumplir con esta mision brindamos cursos gratuitos que buscan que
+          veamos a la tecnologia como un medio equiparador de oportunidades y
+          como una herramienta para introducirnos al mundo laboral. <br />
+        </p>
+        <h3>LOS CURSOS QUE BRINDAMOS</h3>
+        <p>Los cursos que brindamos en la regional Mar del plata son:</p>
+        <ul>
+          <li>Operador de PC</li>
+          <li>Introduccion a programacion web</li>
+          <li>Programacion en Java Script</li>
+          <li>Introduccion a las Bases de datos</li>
+          <li>Introduccion a la Robotica con Arduino</li>
+        </ul>
+      </div>
+      <div>
+        <br />
+      </div>
+    </main>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center border-top content-footer"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="./index.html"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <img src="./img/iconos/CILSA.png" alt="" class="imglogo-footer" />
+        </a>
+        <span class="mb-3 mb-md-0 text-muted"> 2022 Grupo CILSA ONG</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a
+            class="text-muted"
+            href="https://www.facebook.com/formacion.cilsa.mdplata"
+            ><img class="img-redes" src="../img/iconos/facebook.png" alt=""
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://instagram.com/formacion.cilsa.mdp"
+            ><img class="img-redes" src="../img/iconos/instagram.png" alt=""
+          /></a>
+        </li>
+        <li class="ms-3">
+          <a
+            class="text-muted"
+            href="https://www.google.com/maps/search/Diag.%20Alberdi%20Sur%202638%2C%20B7600GYJ%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina/@-37.9977,-57.5468,17z?hl=es"
+            ><img class="img-redes" src="./img/iconos/localizacion.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
